@@ -1,0 +1,35 @@
+body {
+    background-color: turquoise;
+}
+
+.line-loader {
+    width: 500px;
+    height: 20px;
+    background: rgb(238, 238, 238);
+    position: relative;
+    overflow: hidden;
+}
+
+ 
+/* pseudo-elements */
+
+.line-loader::before { 
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 20px;
+    background: rgb(35, 179, 31);
+    animation: movingline 1s linear infinite;
+}
+
+
+@keyframes movingline {
+    0% {
+        left: -100px;
+    }
+    
+    100% {
+    left: 50%;
+    }
+}
+

@@ -1,0 +1,27 @@
+body {
+    background-color: aqua;
+}
+
+
+.text-slide {
+    color: rgb(126, 81, 22);
+    font-size: large;
+    animation: 3s alternate-reverse slideIn; /* shorthand */
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
