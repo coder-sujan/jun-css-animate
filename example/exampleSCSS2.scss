@@ -6,7 +6,13 @@
 h2 {
 
     background-color: variable.$background-color;
+    color: variable.$font-color;
     @include h1-style.h2-style;
+
+    &:hover {
+
+        background-color: variable.$primary-color;
+    }
 
 
 }
