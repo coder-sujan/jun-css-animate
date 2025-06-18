@@ -1,0 +1,12 @@
+@use 'h1-style';
+@use 'variable';
+
+
+
+h2 {
+
+    background-color: variable.$background-color;
+    @include h1-style.h2-style;
+
+
+}
